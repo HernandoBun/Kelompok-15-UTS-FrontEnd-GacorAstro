@@ -1,6 +1,7 @@
 
 body{
-    background-color: aliceblue;
+    background-image: url(img/space.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
