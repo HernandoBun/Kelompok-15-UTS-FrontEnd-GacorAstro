@@ -19,8 +19,6 @@ html{
 }
 
 body{
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
-    background-size: cover;
     color: white;
 }
 
@@ -71,7 +69,9 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 5rem 5% 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5%;
 }
 
 /* SECTION HOME */
@@ -80,7 +80,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 5rem;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
+    background-size: cover;
+    
 
 }
 
@@ -93,14 +96,65 @@ section{
     margin-top: 3rem;
 }
 
-.konten-home h1{
+.heading{
     font-size: 5rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
 
+.konten-home p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 1000px;
+}
+
 .logo-gacor img{
     position: relative;
-    width: 50vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--color-second);
+    width: 30vw;
+    transition: 0.4s ease-in-out;
+
+}
+
+/* SECTION ZODIAK */
+
+.zodiak{
+    padding: 100px 15px;
+    background: rgb(48, 38, 69);
+}
+
+.logo-zodiak{
+    font-family: 'Zodiac Signs', sans-serif;
+    font-size: 10rem;   
+    border: 2px solid white;
+    border-radius: 200%;     
+              
+}
+
+.zodiak-box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.zodiak .heading{
+    margin-bottom: 5rem;
+    font-weight: 800;
+}
+
+
+.wrapper{
+    display: grid;
+    /* membuat dua kolom yang ukurannya sama lebar. */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+}
+
+.zodiak-item a{
+    color: white;
 }
