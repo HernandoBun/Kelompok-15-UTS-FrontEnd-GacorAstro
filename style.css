@@ -172,7 +172,7 @@ section{
 .wrapper{
     display: grid;
     /* membuat dua kolom yang ukurannya sama lebar. */
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
 
