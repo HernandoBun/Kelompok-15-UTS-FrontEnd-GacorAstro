@@ -19,8 +19,6 @@ html{
 }
 
 body{
-    background-image: url(https://r4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-43ab43cd9dc95ba50f665267c89b1818.jpg);
-    background-size: cover;
     color: white;
 }
 
@@ -38,7 +36,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background: #2E1A47;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(1000px);
 }
 
 .logo{
@@ -69,3 +67,130 @@ body{
     transform: rotateY(50deg);
 }
 
+section{
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5%;
+}
+
+/* SECTION HOME */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
+    background-size: cover;
+    
+
+}
+
+.konten-home{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.heading{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.konten-home p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 1000px;
+}
+
+.logo-gacor img{
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--color-second);
+    width: 30vw;
+    transition: 0.4s ease-in-out;
+
+}
+
+.logo-gacor img:hover{
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction: reverse
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* SECTION ZODIAK */
+
+.zodiak{
+    padding: 100px 15px;
+    background: rgb(48, 38, 69);
+}
+
+
+@font-face {
+    font-family: 'ZodiacFont';
+    src: url('font/ZodiacFont.ttf') format('truetype');
+}
+
+.logo-zodiak{
+    font-family: 'ZodiacFont', serif;
+    font-size: 10rem;   
+        
+              
+}
+.zodiak-box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.zodiak .heading{
+    margin-bottom: 5rem;
+    font-weight: 800;
+}
+
+.zodiak-item h4{
+    font-size: 2rem;
+}
+
+.zodiak-item p{
+    font-size: 1.1rem;
+}
+
+.zodiak-item a{
+    transition: 0.4s ease-in-out;
+}
+
+.zodiak-item a:hover{
+    color: lightgoldenrodyellow;
+    text-shadow: 4px 4px 7px #9b5347
+
+}
+
+.wrapper{
+    display: grid;
+    /* membuat dua kolom yang ukurannya sama lebar. */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.zodiak-item a{
+    color: white;
+}
