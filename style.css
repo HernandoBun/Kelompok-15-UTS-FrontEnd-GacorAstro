@@ -126,14 +126,18 @@ section{
     background: rgb(48, 38, 69);
 }
 
-.logo-zodiak{
-    font-family: 'Zodiac Signs', sans-serif;
-    font-size: 10rem;   
-    border: 2px solid white;
-    border-radius: 200%;     
-              
+
+@font-face {
+    font-family: 'ZodiacFont';
+    src: url('font/ZodiacFont.ttf') format('truetype');
 }
 
+.logo-zodiak{
+    font-family: 'ZodiacFont', serif;
+    font-size: 10rem;   
+        
+              
+}
 .zodiak-box{
     background-size: cover;
     display: flex;
@@ -145,6 +149,10 @@ section{
 .zodiak .heading{
     margin-bottom: 5rem;
     font-weight: 800;
+}
+
+.zodiak-item h4{
+    font-size: 2rem;
 }
 
 
