@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background-color: bisque;
+    background-color: rgb(151, 167, 253);
     margin-top: -15px;
 }
 
@@ -28,4 +28,11 @@ header ul li{
 
 a{
     text-decoration: none;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
 }
