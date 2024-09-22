@@ -155,6 +155,19 @@ section{
     font-size: 2rem;
 }
 
+.zodiak-item p{
+    font-size: 1.1rem;
+}
+
+.zodiak-item a{
+    transition: 0.4s ease-in-out;
+}
+
+.zodiak-item a:hover{
+    color: lightgoldenrodyellow;
+    text-shadow: 4px 4px 7px #9b5347
+
+}
 
 .wrapper{
     display: grid;
