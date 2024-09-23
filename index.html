@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/zodiac-signs" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+      <!-- JQUERY CDN -->
+    <script 
+      src="https://code.jquery.com/jquery-3.7.1.js" 
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+      crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -138,39 +144,75 @@
                     </a>
                 </div>
 
-                    
+
             </div>
         </div>
     </section>
 
-    <section class="artikel" id="artikel">
-        <div class="artikel-filter container">
-            <span class="artikel-item active-filter" data-filter='all'>All</span>
-            <span class="artikel-item" data-filter="Zodiak">Zodiak</span>
-            <span class="artikel-item" data-filter="Lifestyle">Lifestyle</span>
-            <span class="artikel-item" data-filter="Health">Health</span>
-            <span class="artikel-item" data-filter="Relationship">Relationship</span>
-        </div>
-        <div class="artikel-content">
-            <div class="artikel-box">
-                <a href="#" class="artikel-title">
-                    <img src="img/artikel-zodiak-1.jpeg" alt="" class="artikel-zodiak-1">
-                    <h2 class="category">Lifestyle</h2>
-                    <h3>Sikap Perfeksionis Seorang Virgo yang Membuat Orang Nyaman</h3>
-                    <p>Kamu punya teman virgo yang sangat perfeksionis? Mungkin kamu belum mengenal sisi temanmu sepenuhnya. Pada umumnya, virgo memang dikenal akan karakteristiknya yang perfeksionis.
-                        Namun nyatanya, virgo juga mempunyai sisi lembut yang bisa membuat orang-orang di sekitarnya nyaman. Berikut beberapa sifat virgo yang sering kali menarik dan menyenangkan bagi orang lain:</p>
-                </a>
-            </div>
-            <div class="artikel-box">
-                <a href="#" class="artikel-title">
-                    <img src="img/artikel-zodiak-2.jpeg" alt="" class="artikel-zodiak-2">
-                    <h2 class="category">Relationship</h2>
-                    <h3>5 Cara Membangun Pertemanan yang Positif untuk Kehidupan Lebih Bahagia</h3>
-                    <p>Memiliki hubungan pertemanan yang positif bisa memberikan dampak luar biasa dalam hidup kita. Sahabat Fimela, pertemanan yang sehat tidak hanya membuat kita lebih bahagia, tapi juga bisa meningkatkan kualitas hidup secara keseluruhan. Pertemanan yang baik mendukung kita dalam berbagai fase kehidupan, dari masa-masa sulit hingga saat-saat bahagia. Nah, bagaimana caranya membangun hubungan pertemanan yang positif? Simak tips berikut!</p>
-                </a>
-            </div>
-        </div>
+    <div class="artikel-filter container">
+        <span class="artikel-item active-filter" data-filter='all'>All</span>
+        <span class="artikel-item" data-filter="Zodiak">Zodiak</span>
+        <span class="artikel-item" data-filter="Lifestyle">Lifestyle</span>
+        <span class="artikel-item" data-filter="Health">Health</span>
+        <span class="artikel-item" data-filter="Relationship">Relationship</span>
+    </div>
 
+    <section class="artikel-content" id="artikel">
+        <div class="artikel-box Lifestyle">
+            <img src="img/artikel-zodiak-1.jpeg" alt="" class="artikel-zodiak-1">
+            <h2 class="category">Lifestyle</h2>
+            <h3>Sikap Perfeksionis Seorang Virgo yang Membuat Orang Nyaman</h3>
+            <p>Kamu punya teman virgo yang sangat perfeksionis? Mungkin kamu belum mengenal sisi temanmu sepenuhnya. Pada umumnya, virgo memang dikenal akan karakteristiknya yang perfeksionis.
+                Namun nyatanya, virgo juga mempunyai sisi lembut yang bisa membuat orang-orang di sekitarnya nyaman. Berikut beberapa sifat virgo yang sering kali menarik dan menyenangkan bagi orang lain:</p>
+        </div>
+        <div class="artikel-box Relationship">
+            <img src="img/artikel-zodiak-2.jpeg" alt="" class="artikel-zodiak-2">
+            <h2 class="category">Relationship</h2>
+            <h3>5 Cara Membangun Pertemanan yang Positif untuk Kehidupan Lebih Bahagia</h3>
+            <p>Memiliki hubungan pertemanan yang positif bisa memberikan dampak luar biasa dalam hidup kita.pertemanan yang sehat tidak hanya membuat kita lebih bahagia, tapi juga bisa meningkatkan kualitas hidup secara keseluruhan. Pertemanan yang baik mendukung kita dalam berbagai fase kehidupan, dari masa-masa sulit hingga saat-saat bahagia. Nah, bagaimana caranya membangun hubungan pertemanan yang positif? Simak tips berikut!</p>
+        </div> 
+        <div class="artikel-box Zodiak">
+            <img src="img/artikel-zodiak-3.jpeg" alt="" class="artikel-zodiak-3">
+            <h2 class="category">Zodiak</h2>
+            <h3>5 Zodiak Paling Gampang Tersinggung, Perasaannya Begitu Sensitif</h3>
+            <p>Memiliki hubungan pertemanan yang positif bisa memberikan dampak luar biasa dalam hidup kita.pertemanan yang sehat tidak hanya membuat kita lebih bahagia, tapi juga bisa meningkatkan kualitas hidup secara keseluruhan. Pertemanan yang baik mendukung kita dalam berbagai fase kehidupan, dari masa-masa sulit hingga saat-saat bahagia. Nah, bagaimana caranya membangun hubungan pertemanan yang positif? Simak tips berikut!</p>
+        </div> 
+        <div class="artikel-box Lifestyle">
+            <img src="img/artikel-zodiak-4.jpg" alt="" class="artikel-zodiak-4">
+            <h2 class="category">Lifestyle</h2>
+            <h3>Ladies Wajib Tahu, 3 Orang dengan Zodiak Ini Merupakan Pria Paling Menawan, Ada Si Pisces yang Lembut dan Penuh Perhatian</h3>
+            <p>Pernahkah anda bertanya-tanya mengapa beberapa pria memiliki pesona yang tak tertahankan? Menurut astrologi, beberapa zodiak tertentu secara alami diberkahi dengan kualitas yang membuat mereka sangat menarik. Dalam artikel ini, kami mengeksplorasi tiga zodiak yang paling menarik bagi para pria. Baik anda yang penasaran dengan zodiak anda sendiri atau zodiak orang lain, panduan ini akan memberikan wawasan tentang sifat-sifat astrologi yang berkontribusi pada pesona pria.
+
+                Berikut 3 zodiaknya, dikutip dari astrotalk</p>
+        </div>
+        <div class="artikel-box Health">
+            <img src="img/artikel-zodiak-5.jpeg" alt="" class="artikel-zodiak-4">
+            <h2 class="category">Health</h2>
+            <h3>Ramalan Zodiak Senin, 23 September 2024, Leo: Kondisi Finansial dan Kesehatan Tampak Stabil</h3>
+            <p>Ramalan zodiak Senin, 23 September 2024 sangat sayang untuk dilewatkan. Hal tersebut karena banyak prediksi yang bisa membantu Anda untuk mengetahui apa yang akan terjadi hari ini mulai dari urusan finansial, asmara, hubungan sesama rekan kerja, kesehatan dan lain sebagainya.</p>
+        </div> 
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.artikel-item').click(function(){
+                const value = $(this).attr('data-filter')
+                if (value === "all") {
+                    $(".artikel-box").show("1000")
+                } else {
+                    $(".artikel-box")
+                        .not("."+value)
+                        .hide("1000")
+                    $(".artikel-box")
+                        .filter("."+value)
+                        .show("1000")
+                }
+            });
+            // Tambahin Button Active
+            $(".artikel-item").click(function(){
+                $(this).addClass("active-filter").siblings().removeClass("active-filter");
+            });
+        });
+        </script>
     </section>
 
 </body>

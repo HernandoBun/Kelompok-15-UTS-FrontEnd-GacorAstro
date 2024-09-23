@@ -197,31 +197,28 @@ section{
 
 /* SECTION ARTIKEL */
 
-.artikel{
-    padding: 100px 15px;
-    background: rgb(48, 38, 69);
-}
-
 .artikel-filter{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 1.5rem;
-    margin-top: 2rem;
-
+    background: rgb(48, 38, 69);
 }
 
 .artikel-item{
     font-size: 2rem;
     font-weight: 500;
     cursor: pointer;
+    color: azure;
+    background: rgb(48, 38, 69);
 }
 
-.active-filter{
+.active-filter {
     background: whitesmoke;
     color: #2E1A47;
     padding: 4px 10px;
     border-radius: 4px;
+    font-size: 2rem; 
 }
 
 .artikel-content{
@@ -229,7 +226,7 @@ section{
     grid-template-columns: repeat(autofit, minmax(280px, auto));
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 20px;
+    background: rgb(48, 38, 69);
 }
 
 .artikel-box{
@@ -261,6 +258,7 @@ section{
 }
 
 .artikel-box h3{
+    font-size: 2rem;
     color: aliceblue;
 }
 
