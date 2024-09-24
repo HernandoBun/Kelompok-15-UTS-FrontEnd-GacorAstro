@@ -149,10 +149,22 @@ section{
 
 .logo-zodiak{
     font-family: 'ZodiacFont', serif;
-    font-size: 10rem;   
-        
+    font-size: 10rem;  
+    background-color: #2E1A47;
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    padding: 10px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
               
 }
+
+.logo-zodiak:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
 .zodiak-box{
     background-size: cover;
     display: flex;
@@ -166,8 +178,22 @@ section{
     font-weight: 800;
 }
 
+
+a h4 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zodiak-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .zodiak-item h4{
     font-size: 2rem;
+
 }
 
 .zodiak-item p{
