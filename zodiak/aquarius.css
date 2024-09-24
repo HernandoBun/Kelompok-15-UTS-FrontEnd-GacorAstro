@@ -67,32 +67,6 @@ body{
     transform: rotateY(50deg);
 }
 
-
-
-body{
-    margin:0;
-    background: 
-        url(https://wallpapercave.com/wp/wp4039372.jpg)
-        no-repeat center fixed;
-    background-size: cover;
-    color: #fff;
-    padding: 2rem;
-	
-}
-
-body::before{
-    content: ' ';
-    background: rgba(0, 0, 0, .7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: fixed;
-}
-
-
 @font-face {
     font-family: 'ZodiacFont';
     src: url('../font/ZodiacFont.ttf') format('truetype');
@@ -122,6 +96,11 @@ h2{
 
 .judul{
     text-align: center;
+}
+
+.judul img{
+    width: 20%;
+    height: 20%;
 }
 
 .judul p{
