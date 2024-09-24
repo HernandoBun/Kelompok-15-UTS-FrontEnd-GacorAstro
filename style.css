@@ -295,3 +295,109 @@ a h4 p{
     justify-content: center;
     align-items: center;
 }
+
+/* .contact {
+    font-family: "Poppins", sans-serif;
+    background-color: #141049;
+    color: rgb(219, 217, 212);
+  } */
+
+  nav, .nav-links {
+    display: flex;
+    }
+  
+    .section_text_p1 {
+      text-align: center;
+      font-size: 4rem;    
+      font-weight: 600;
+      line-height: 1.3;
+    }
+  
+    .title{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 3.5rem;
+    }
+  
+    nav {
+      justify-content: space-around;
+      align-items: center;
+      height: 17vh;
+    }
+    
+    .nav-links{
+      gap: 2rem;
+      list-style: none;
+      font-size: 1.5rem;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      margin-right: 3rem;
+    }
+  
+    .contact {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 70vh;
+      background: rgb(48, 38, 69);
+    }
+    
+    .contact-info-upper-container {
+      display: flex;
+      justify-content: center;
+      border-radius: 2rem;
+      border: rgb(53, 53, 53) 0.1rem solid;
+      border-color: rgb(163, 163, 163);
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+      margin: 2rem auto;
+      padding: 1.5rem;
+      font-size: 1.7rem;
+    }
+      
+    .contact-info-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1rem;
+    }
+    
+    .contact-info-container p {
+      font-size: larger;
+      text-decoration: none;
+    }
+  
+    .contact-info-container a{
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    .contact-icon {
+      cursor: default;
+    }
+    
+    /* FOOTER SECTION */
+    
+    footer {
+      height: 26vh;
+      background-color: rgb(32, 28, 80);
+      font-size: 2rem;
+    }
+  
+    footer a{
+      color: rgb(241, 241, 241);
+      text-decoration: none;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    footer a:hover{
+      transition: color 0.3 ease;
+      color: rgb(16, 27, 126);
+    }
+    
+    footer p {
+      text-align: center;
+    }
