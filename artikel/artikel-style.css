@@ -111,10 +111,15 @@ aside{
     color: #9b5347;
 }
 
+.header-content h1{
+    font-size: 2.2rem;
+}
+
 .back-home{
     color: white;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .header-title{
