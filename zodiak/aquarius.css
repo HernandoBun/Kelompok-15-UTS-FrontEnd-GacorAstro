@@ -121,8 +121,8 @@ h2{
 }
 
 .judul img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .judul{
@@ -223,7 +223,7 @@ h2{
     right: -0.5em;
 }
 
-/* @media screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
     .timeline{
         width: 80vw;
     }
@@ -249,4 +249,4 @@ h2{
         left: 50%;
         transform: translateX(-50%);
     }
-} */
+}
