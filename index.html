@@ -161,26 +161,34 @@
         <div class="artikel-box Lifestyle">
             <img src="img/artikel-zodiak-1.jpeg" alt="" class="artikel-zodiak-1">
             <h2 class="category">Lifestyle</h2>
-            <h3>Sikap Perfeksionis Seorang Virgo yang Membuat Orang Nyaman</h3>
+            <a href="artikel/artikel-1.html">
+                <h3>Sikap Perfeksionis Seorang Virgo yang Membuat Orang Nyaman</h3>
+            </a>
             <p>Kamu punya teman virgo yang sangat perfeksionis? Mungkin kamu belum mengenal sisi temanmu sepenuhnya. Pada umumnya, virgo memang dikenal akan karakteristiknya yang perfeksionis.
                 Namun nyatanya, virgo juga mempunyai sisi lembut yang bisa membuat orang-orang di sekitarnya nyaman. Berikut beberapa sifat virgo yang sering kali menarik dan menyenangkan bagi orang lain:</p>
         </div>
         <div class="artikel-box Relationship">
             <img src="img/artikel-zodiak-2.jpeg" alt="" class="artikel-zodiak-2">
             <h2 class="category">Relationship</h2>
-            <h3>5 Cara Membangun Pertemanan yang Positif untuk Kehidupan Lebih Bahagia</h3>
+            <a href="artikel/artikel-2.html">
+                <h3>5 Cara Membangun Pertemanan yang Positif untuk Kehidupan Lebih Bahagia</h3>
+            </a>        
             <p>Memiliki hubungan pertemanan yang positif bisa memberikan dampak luar biasa dalam hidup kita.pertemanan yang sehat tidak hanya membuat kita lebih bahagia, tapi juga bisa meningkatkan kualitas hidup secara keseluruhan. Pertemanan yang baik mendukung kita dalam berbagai fase kehidupan, dari masa-masa sulit hingga saat-saat bahagia. Nah, bagaimana caranya membangun hubungan pertemanan yang positif? Simak tips berikut!</p>
         </div> 
         <div class="artikel-box Zodiak">
             <img src="img/artikel-zodiak-3.jpeg" alt="" class="artikel-zodiak-3">
             <h2 class="category">Zodiak</h2>
-            <h3>5 Zodiak Paling Gampang Tersinggung, Perasaannya Begitu Sensitif</h3>
+            <a href="artikel/artikel-3.html">
+                <h3>5 Zodiak Paling Gampang Tersinggung, Perasaannya Begitu Sensitif</h3>
+            </a>
             <p>Memiliki hubungan pertemanan yang positif bisa memberikan dampak luar biasa dalam hidup kita.pertemanan yang sehat tidak hanya membuat kita lebih bahagia, tapi juga bisa meningkatkan kualitas hidup secara keseluruhan. Pertemanan yang baik mendukung kita dalam berbagai fase kehidupan, dari masa-masa sulit hingga saat-saat bahagia. Nah, bagaimana caranya membangun hubungan pertemanan yang positif? Simak tips berikut!</p>
         </div> 
         <div class="artikel-box Lifestyle">
             <img src="img/artikel-zodiak-4.jpg" alt="" class="artikel-zodiak-4">
             <h2 class="category">Lifestyle</h2>
-            <h3>Ladies Wajib Tahu, 3 Orang dengan Zodiak Ini Merupakan Pria Paling Menawan, Ada Si Pisces yang Lembut dan Penuh Perhatian</h3>
+            <a href="artikel/artikel-4.html">
+                <h3>Ladies Wajib Tahu, 3 Orang dengan Zodiak Ini Merupakan Pria Paling Menawan, Ada Si Pisces yang Lembut dan Penuh Perhatian</h3>
+            </a>
             <p>Pernahkah anda bertanya-tanya mengapa beberapa pria memiliki pesona yang tak tertahankan? Menurut astrologi, beberapa zodiak tertentu secara alami diberkahi dengan kualitas yang membuat mereka sangat menarik. Dalam artikel ini, kami mengeksplorasi tiga zodiak yang paling menarik bagi para pria. Baik anda yang penasaran dengan zodiak anda sendiri atau zodiak orang lain, panduan ini akan memberikan wawasan tentang sifat-sifat astrologi yang berkontribusi pada pesona pria.
 
                 Berikut 3 zodiaknya, dikutip dari astrotalk</p>
@@ -188,8 +196,18 @@
         <div class="artikel-box Health">
             <img src="img/artikel-zodiak-5.jpeg" alt="" class="artikel-zodiak-4">
             <h2 class="category">Health</h2>
-            <h3>Ramalan Zodiak Senin, 23 September 2024, Leo: Kondisi Finansial dan Kesehatan Tampak Stabil</h3>
+            <a href="artikel/artikel-5.html">
+              <h3>Ramalan Zodiak Senin, 23 September 2024, Leo: Kondisi Finansial dan Kesehatan Tampak Stabil</h3>
+            </a>
             <p>Ramalan zodiak Senin, 23 September 2024 sangat sayang untuk dilewatkan. Hal tersebut karena banyak prediksi yang bisa membantu Anda untuk mengetahui apa yang akan terjadi hari ini mulai dari urusan finansial, asmara, hubungan sesama rekan kerja, kesehatan dan lain sebagainya.</p>
+        </div> 
+        <div class="artikel-box Zodiak">
+            <img src="img/artikel-zodiak-6.jpeg" alt="" class="artikel-zodiak-4">
+            <h2 class="category">Zodiak</h2>
+            <a href="artikel/artikel-6.html">
+              <h3>5 Zodiak Paling Beruntung dan Bahagia di Bulan Oktober 2024</h3>
+            </a>
+            <p>Bulan Oktober 2024 tampaknya akan menjadi bulan yang penuh dengan kejutan, peluang, serta keberuntungan bagi beberapa zodiak. Bulan Oktober 2024 bisa jadi akan membawa perubahan besar bagi beberapa zodiak. Dipengaruhi oleh pergerakan planet, bintang dan benda langit lainnya, diramal akan ada beberapa zodiak yang akan mengalami bulan penuh keberuntungan dan peluang emas.</p>
         </div> 
 
         <script type="text/javascript">
@@ -197,7 +215,8 @@
             $('.artikel-item').click(function(){
                 const value = $(this).attr('data-filter')
                 if (value === "all") {
-                    $(".artikel-box").show("1000")
+                    $(".artikel-box").hide(); 
+                    $(".artikel-box:lt(3)").show("1000");
                 } else {
                     $(".artikel-box")
                         .not("."+value)
@@ -214,36 +233,39 @@
         });
         </script>
     </section>
-    <!-- contact -->
-    <section class="contact">
-        <h1 class="title">Hubungi Kami</h1>
-        <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-            <img src="./email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-            <p><a href="mailto:darrenamadeus1@gmail.com" target="_blank">darrenamadeus1@gmail.com</a></p>
+    <!-- Newsletter Section -->
+    <div class="contact-newsletter-container">
+        <div class="newsletter">
+            <h1>Dapatkan Informasi Terbaru</h1>
+            <p>Dapatkan informasi terbaru dan penawaran khusus langsung ke email Anda!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Masukkan email Anda">
+                <button type="submit">Berlangganan</button>
+            </form>
         </div>
-        <div class="contact-info-container">
-            <img
-            src=""
-            alt="Logo Web"
-            class="icon contact-icon"
-            />
-            <p><a href=""></a></p>
-        </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-        <div class="nav-links-container">
-            <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#zodiak">Zodiak</a></li>
-            <li><a href="#artikel">Artikel</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            </ul>
-        </div>
-        </nav>
-        <p>Copyright &#169; 2024 Darren Amadeus. All Rights Reserved.</p>
-    </footer>
+    </div>
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#zodiak">Zodiak</a></li>
+        <li><a href="#artikel">Artikel</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+    </ul>
+    <p>Copyright &#169; 2024 GacorAstro. All Rights Reserved.</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
