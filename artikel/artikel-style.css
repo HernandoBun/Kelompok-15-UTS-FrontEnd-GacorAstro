@@ -20,7 +20,7 @@ html{
 
 body{
     color: white;
-    background-color: #2E1A47;
+    background-color: rgb(48, 38, 69);
 }
 
 .header{
@@ -28,10 +28,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 2rem;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-bottom: 2rem;
+    padding: 2rem 12%;
     z-index: 5;
     display: flex;
     align-items: center;
@@ -52,7 +49,6 @@ body{
     text-shadow: 2px 2px 10px #9b5347
 }
 
-
 .navigasi a {
     color: antiquewhite;
     font-size: 1.6rem;
@@ -70,26 +66,22 @@ body{
 
 main{
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5rem;
 }
 
 section{
     min-height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 5%;
-    float: left;
-    margin: 0 1.5%;
-    width: 63%;
+    padding: 5rem 5%;
+    width: 60%;
 }
 
 aside{
-    float: right;
-    margin: 0 1.5%;
-    width: 30%;
-    margin-left: -500px;
-    margin-top: 100px;
+    width: 40%;
+    margin-top: 0;
 }
-/* Artikel Header Section */
 
 .artikel-header{
     width: 100%;
@@ -113,6 +105,7 @@ aside{
 
 .header-content h1{
     font-size: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 .back-home{
@@ -126,28 +119,25 @@ aside{
     width: 80%;
     font-size: 2.6rem;
     text-align: center;
-    margin-bottom: 1rem;
-    margin-right: 600px;
 }
 
 .header-img{
-    width: 650px;
-    height: 550px;
-    margin-right: 700px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
     object-fit: cover;
-    object-position: center;
 }
 
 .artikel-content{
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
 }
 
 .artikel-content h2{
     font-size: 1.5rem;
-    text-align: justify;
+    margin-bottom: 2rem;
 }
 
 .artikel-content h2 span{
@@ -160,7 +150,6 @@ aside{
 }
 
 .artikel-content p{
-    text-align: justify;
     font-size: 1.5rem;
 }
 
@@ -171,7 +160,8 @@ aside{
 }
 
 .artikel-box img{
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -186,4 +176,162 @@ aside{
     font-size: 1.2rem;
     color: aliceblue;
     text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-title {
+        margin-right: 0;
+    }
+
+    .header-img {
+        margin-right: 0;
+    }
+
+    .artikel-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside {
+        margin-top: 2rem;
+    }
+}
+
+footer{
+    margin-top: 15%;
+    position: relative;
+    width: 100%;
+    background: #36265c;
+    min-height: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-icon,
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li{
+    list-style: none;
+
+}
+
+footer .social-icon li a{
+    font-size: 3em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icon li a:hover{
+    transform: translateY(-10px);
+
+}
+
+footer .menu li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave2.png);
+    background-size: 1000px 100px;
+    
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave 3s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
 }
