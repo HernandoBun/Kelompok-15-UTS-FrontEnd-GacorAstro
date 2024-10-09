@@ -390,9 +390,9 @@ a h4 p{
 footer{
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #36265c;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,8 +456,9 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(./img/wave.png);
+    background: url(../img/wave2.png);
     background-size: 1000px 100px;
+    
 }
 
 footer .wave#wave1{
