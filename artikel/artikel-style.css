@@ -178,18 +178,29 @@ aside{
     text-align: left;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     html {
-        font-size: 55%;
+        font-size: 50%; /* Ukuran font lebih kecil untuk ponsel */
     }
 
-    .header{
-        padding-left: 5%;
-        padding-right: 5%;
+    .header {
+        flex-direction: column;
+        padding: 1.5rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .navigasi a {
+        font-size: 1.4rem;
+        padding: 8px 10px;
     }
 
     main {
         flex-direction: column;
+        padding-top: 4rem;
     }
 
     section, aside {
@@ -198,25 +209,83 @@ aside{
     }
 
     .header-title {
-        margin-right: 0;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
     }
 
-    .header-img {
-        margin-right: 0;
+    .artikel-header, .artikel-content {
+        padding: 4rem 2%;
+    }
+
+    .artikel-box img {
+        max-width: 150px;
+        margin-right: 10px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .social-icon li a {
+        font-size: 2.5rem;
+    }
+
+    footer .menu li a {
+        font-size: 1.8rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.8rem 6%;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+    }
+
+    .navigasi a {
+        font-size: 1.5rem;
+    }
+
+    .header-title {
+        font-size: 2.4rem;
     }
 
     .artikel-content {
-        width: 100%;
-        padding: 0;
+        font-size: 1.4rem;
     }
 
-    aside {
-        margin-top: 2rem;
+    .artikel-box img {
+        max-width: 170px;
+        margin-right: 15px;
+    }
+
+    footer .social-icon li a {
+        font-size: 2.7rem;
+    }
+
+    footer .menu li a {
+        font-size: 2rem;
+    }
+
+
+    footer p {
+        font-size: 1.25rem;
     }
 }
 
 footer{
-    margin-top: 15%;
+    margin-top: 20%;
     position: relative;
     width: 100%;
     background: #36265c;
