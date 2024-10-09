@@ -83,9 +83,27 @@ section{
     gap: 5rem;
     background-image: url(https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
     background-size: cover;
+    position: relative;
+    animation: slider 12.5s infinite;
     
 
 }
+
+@keyframes slider {
+    0%, 16%, 100% {
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg');
+    }
+    20%, 36% {
+        background-image: url('https://wallpapertag.com/wallpaper/full/2/4/0/659492-cool-sick-trippy-backgrounds-1920x1200-pictures.jpg');
+    }
+    40%, 56% {
+        background-image: url('https://wallpapercave.com/wp/wp12733887.jpg');
+    }
+    60%, 76% {
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/362/463/761/space-purple-galaxy-wallpaper-preview.jpg');
+    }
+}
+
 
 .konten-home{
     display: flex;
@@ -372,9 +390,9 @@ a h4 p{
 footer{
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #36265c;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -438,8 +456,9 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(./img/wave.png);
+    background: url(../img/wave2.png);
     background-size: 1000px 100px;
+    
 }
 
 footer .wave#wave1{
@@ -485,5 +504,21 @@ footer .wave#wave4{
     }
     100%{
         background-position-x: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .wrapper {
+        grid-template-columns: 1fr;
     }
 }
