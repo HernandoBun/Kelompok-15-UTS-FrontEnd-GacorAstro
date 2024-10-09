@@ -20,6 +20,8 @@ html{
 
 body{
     color: white;
+    padding: 0;
+    
 }
 
 .header{
@@ -40,7 +42,7 @@ body{
 }
 
 .logo{
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: 600;
     color: white;
     transition: 0.3s;
@@ -51,10 +53,9 @@ body{
     text-shadow: 2px 2px 10px #9b5347
 }
 
-
 .navigasi a {
     color: antiquewhite;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 10px 15px;
     display: inline-block;
@@ -67,43 +68,6 @@ body{
     transform: rotateY(50deg);
 }
 
-
-
-body{
-    margin:0;
-    background: 
-        url(https://e0.pxfuel.com/wallpapers/232/682/desktop-wallpaper-star-chart-fishes.jpg)
-        no-repeat center fixed;
-    background-size: cover;
-    color: #fff;
-    padding: 2rem;
-	
-}
-
-body::before{
-    content: ' ';
-    background: rgba(0, 0, 0, .7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: fixed;
-}
-
-
-@font-face {
-    font-family: 'ZodiacFont';
-    src: url('../font/ZodiacFont.ttf') format('truetype');
-}
-
-.logo-zodiak{
-    font-family: 'ZodiacFont', serif;
-    font-size: 20rem;   
-    text-shadow: 1px 1px 16px#0d71fc;
-              
-}
 
 section{
     margin-top: 100px;
@@ -123,18 +87,21 @@ h2{
 .judul img{
     width: 30%;
     height: 30%;
+    margin-top: 7rem;
 }
 
 .judul{
     text-align: center;
 }
 
+
 .judul p{
     color: #0d71fc;
-    font-size: 2em;
+    font-size: 5em;
     text-shadow: 0px 0px 9px #9b5347;
     letter-spacing: 2px;
     font-weight: bold;
+    margin-top: 8rem;
 }
 
 .timeline{
@@ -166,8 +133,12 @@ h2{
 
 .poin p{
     line-height: 27px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ccc;
+}
+
+.poin h2{
+    font-size: 3rem;
 }
 
 .poin:nth-child(odd){
@@ -250,14 +221,19 @@ h2{
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .poin h2{
+        text-align: center;
+    }
 }
+
 
 footer{
     position: relative;
     width: 100%;
     background: #36265c;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
