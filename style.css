@@ -491,6 +491,7 @@ footer .wave#wave4{
 .ulasan{
     font-family: Arial, sans-serif;
     margin: 0;
+    margin-top: -40%;
     display: flex;
     justify-content: center;
     align-items: center;
