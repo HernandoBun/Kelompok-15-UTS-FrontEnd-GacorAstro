@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 :root{
@@ -87,14 +87,13 @@ h2{
 .judul img{
     width: 30%;
     height: 30%;
-    margin-top: 7rem;
+    margin-top: 1.5rem;
 }
 
 .judul{
     text-align: center;
     margin-top: 10%;
 }
-
 
 .judul p{
     color: #0d71fc;
