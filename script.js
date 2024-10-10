@@ -37,7 +37,7 @@ submitBtn.addEventListener("click", () => {
 
     if (!userRating || !review) {
         alert(
-"Please select a rating and provide a review before submitting."
+"Silakan pilih rating dan berikan ulasan sebelum mengirimkan."
             );
         return;
     }

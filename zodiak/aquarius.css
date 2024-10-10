@@ -92,6 +92,7 @@ h2{
 
 .judul{
     text-align: center;
+    margin-top: 10%;
 }
 
 
@@ -102,6 +103,25 @@ h2{
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 2.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 1.5rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .navigasi a {
+        font-size: 1.4rem;
+        padding: 8px 10px;
+    }
+    .judul h1{
+        margin-top: 30%;
+    }
 }
 
 .timeline{
