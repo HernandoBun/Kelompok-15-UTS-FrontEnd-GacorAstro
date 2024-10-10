@@ -35,8 +35,63 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2E1A47;
-    backdrop-filter: blur(1000px);
+    background: rgba(46, 26, 71, 0.61); 
+    backdrop-filter: blur(10px);
+}
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+.header .logo{
+  color: hsl(230, 100%, 95%);
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
 }
 
 .logo{
@@ -136,7 +191,7 @@ section{
 }
 
 .konten-home p{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.6;
     max-width: 500px;
@@ -225,13 +280,13 @@ a h4 p{
     text-align: center;
 }
 .zodiak-item h4{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 1.4rem;
 
 }
 
 .zodiak-item p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .zodiak-item a{
@@ -669,10 +724,12 @@ button:hover {
 
     .konten-home p {
         max-width: 350px;
+        font-size: 1.9rem;
+
     }
 
     .konten-home .heading{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
 
@@ -683,10 +740,11 @@ button:hover {
 
     .konten-home p {
         max-width: 255px;
+        font-size: 1.9rem;
     }
 
     .konten-home .heading{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
 
