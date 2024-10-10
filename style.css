@@ -140,7 +140,8 @@ section{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
-    max-width: 1000px;
+    max-width: 500px;
+    text-align: justify;
 }
 
 .logo-gacor img{
@@ -639,4 +640,13 @@ button:hover {
     .wrapper {
         grid-template-columns: 1fr;
     }
+
+    .konten-home p {
+        max-width: 235px;
+    }
+
+    .konten-home .heading{
+        font-size: 3.5rem;
+    }
 }
+
