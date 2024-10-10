@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 :root{
@@ -87,13 +87,13 @@ h2{
 .judul img{
     width: 30%;
     height: 30%;
-    margin-top: 7rem;
+    margin-top: 1.5rem;
 }
 
 .judul{
     text-align: center;
+    margin-top: 10%;
 }
-
 
 .judul p{
     color: #0d71fc;
@@ -102,6 +102,25 @@ h2{
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 2.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 1.5rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .navigasi a {
+        font-size: 1.4rem;
+        padding: 8px 10px;
+    }
+    .judul h1{
+        margin-top: 30%;
+    }
 }
 
 .timeline{

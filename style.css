@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 :root{
@@ -74,6 +74,21 @@ section{
     padding-left: 5%;
 }
 
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 1.5rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .navigasi a {
+        font-size: 1.4rem;
+        padding: 8px 10px;
+    }
+}
 /* SECTION HOME */
 
 .home{
@@ -81,7 +96,6 @@ section{
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
     background-size: cover;
     position: relative;
     animation: slider 12.5s infinite;
@@ -91,10 +105,10 @@ section{
 
 @keyframes slider {
     0%, 16%, 100% {
-        background-image: url('https://c4.wallpaperflare.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg');
+        background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=1513&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     }
     20%, 36% {
-        background-image: url('https://wallpapertag.com/wallpaper/full/2/4/0/659492-cool-sick-trippy-backgrounds-1920x1200-pictures.jpg');
+        background-image: url('https://e0.pxfuel.com/wallpapers/500/1004/desktop-wallpaper-starry-night-sky-pc-and-mac-pixel-sky.jpg');
     }
     40%, 56% {
         background-image: url('https://wallpapercave.com/wp/wp12733887.jpg');
@@ -125,7 +139,8 @@ section{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
-    max-width: 1000px;
+    max-width: 500px;
+    text-align: justify;
 }
 
 .logo-gacor img{
@@ -156,7 +171,7 @@ section{
 
 .zodiak{
     padding: 100px 15px;
-    background: rgb(48, 38, 69);
+    
 }
 
 
@@ -211,6 +226,7 @@ a h4 p{
 }
 .zodiak-item h4{
     font-size: 2rem;
+    margin-top: 1.4rem;
 
 }
 
@@ -246,7 +262,6 @@ a h4 p{
     justify-content: center;
     align-items: center;
     column-gap: 1.5rem;
-    background: rgb(48, 38, 69);
 }
 
 .artikel-item{
@@ -254,7 +269,6 @@ a h4 p{
     font-weight: 500;
     cursor: pointer;
     color: azure;
-    background: rgb(48, 38, 69);
 }
 
 .active-filter {
@@ -270,11 +284,9 @@ a h4 p{
     grid-template-columns: repeat(autofit, minmax(280px, auto));
     justify-content: center;
     gap: 1.5rem;
-    background: rgb(48, 38, 69);
 }
 
 .artikel-box{
-    background: rgb(48, 38, 69);
     box-shadow: black;
     padding: 15px;
     border-radius: 0.5rem;
@@ -319,7 +331,6 @@ a h4 p{
     justify-content: center; /* Agar elemen berjauhan secara horizontal */
     align-items: center;
     padding: 2rem;
-    background-color: #302645;
     color: white;
 }
 
@@ -328,7 +339,6 @@ a h4 p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #302645;
     padding: 2rem;
     color: white;
     border-radius: 15px;
@@ -494,7 +504,6 @@ footer .wave#wave4{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #302645;
     color: white;
     min-height: 200vh;
 }
@@ -610,18 +619,89 @@ button:hover {
     }
 }
 
+.body2 {
+    background: linear-gradient(45deg, #441d52, #3b2d7a, #2e1a47, #302645);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+
 @media (max-width: 1200px) {
     .wrapper {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .konten-home p {
+        max-width: 350px;
+    }
+
+    .konten-home .heading{
+        font-size: 3.5rem;
     }
 }
 @media (max-width: 768px) {
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .konten-home p {
+        max-width: 350px;
+    }
+
+    .konten-home .heading{
+        font-size: 3.5rem;
+    }
 }
+
+@media (max-width: 676px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .konten-home p {
+        max-width: 255px;
+    }
+
+    .konten-home .heading{
+        font-size: 3.5rem;
+    }
+}
+
+
 @media (max-width: 576px) {
     .wrapper {
         grid-template-columns: 1fr;
     }
+
+    .konten-home p {
+        max-width: 235px;
+    }
+
+    .konten-home .heading{
+        font-size: 3.5rem;
+    }
 }
+
