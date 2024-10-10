@@ -37,8 +37,63 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2E1A47;
-    backdrop-filter: blur(1000px);
+    background: rgba(46, 26, 71, 0.61); 
+    backdrop-filter: blur(10px);
+}
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+.header .logo{
+  color: hsl(230, 100%, 95%);
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
 }
 
 .logo{
@@ -96,7 +151,7 @@ h2{
 }
 
 .judul p{
-    color: #0d71fc;
+    color: light;
     font-size: 5em;
     text-shadow: 0px 0px 9px #9b5347;
     letter-spacing: 2px;
@@ -153,7 +208,7 @@ h2{
 .poin p{
     line-height: 27px;
     font-size: 2rem;
-    color: #ccc;
+    color: white;
     text-align: justify;
 }
 
@@ -198,7 +253,7 @@ h2{
 .poin:nth-child(even) div::before{
     content: '';
     background: #fff;
-    box-shadow: 0 0 0.5em #0d71fc;
+    box-shadow: 0 0 0.5em #9b5347;
     width: 0.8em;
     height: 0.8em;
     position: absolute;
