@@ -403,7 +403,7 @@ a h4 p{
     min-height: 200px;
     margin: 0 auto; 
     position: relative;
-    top: 5%; 
+    top: 50%; 
     transform: translateY(-50%); 
 }
 
@@ -761,5 +761,35 @@ button:hover {
     .konten-home .heading{
         font-size: 3.5rem;
     }
+
+    .newsletter {
+        
+        max-width: 250px;
+        min-height: 200px;
+        margin: 0 auto; 
+        position: relative;
+        top: 10rem; 
+    }
+
+    .newsletter-form input {
+        padding: 0.8rem;
+        font-size: 0.5rem;
+        border: none;
+        border-radius: 1rem;
+        width: 100px;
+        
+    }
+    
+    .newsletter-form button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        background-color: #3586ff;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+   
 }
 
