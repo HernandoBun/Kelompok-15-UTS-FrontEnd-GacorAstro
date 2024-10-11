@@ -4,6 +4,27 @@ const reviewText = document.getElementById("review");
 const submitBtn = document.getElementById("submit");
 const reviewsContainer = document.getElementById("reviews");
 
+$(document).ready(function(){
+    $('.artikel-item').click(function(){
+        const value = $(this).attr('data-filter')
+        if (value === "all") {
+            $(".artikel-box").hide(); 
+            $(".artikel-box:lt(3)").show("1000");
+        } else {
+            $(".artikel-box")
+                .not("."+value)
+                .hide("1000")
+            $(".artikel-box")
+                .filter("."+value)
+                .show("1000")
+        }
+    });
+    // Tambahin Button Active
+    $(".artikel-item").click(function(){
+        $(this).addClass("active-filter").siblings().removeClass("active-filter");
+    });
+});
+
 stars.forEach((star) => {
     star.addEventListener("click", () => {
         const value = parseInt(star.getAttribute("data-value"));

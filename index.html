@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/zodiac-signs" rel="stylesheet">
-    <script type="text/javascript" src="main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
       <!-- JQUERY CDN -->
     <script 
@@ -213,29 +212,6 @@
                 </a>
                 <p>Bulan Oktober 2024 tampaknya akan menjadi bulan yang penuh dengan kejutan, peluang, serta keberuntungan bagi beberapa zodiak. Bulan Oktober 2024 bisa jadi akan membawa perubahan besar bagi beberapa zodiak. Dipengaruhi oleh pergerakan planet, bintang dan benda langit lainnya, diramal akan ada beberapa zodiak yang akan mengalami bulan penuh keberuntungan dan peluang emas.</p>
             </div> 
-
-            <script type="text/javascript">
-                $(document).ready(function(){
-                $('.artikel-item').click(function(){
-                    const value = $(this).attr('data-filter')
-                    if (value === "all") {
-                        $(".artikel-box").hide(); 
-                        $(".artikel-box:lt(3)").show("1000");
-                    } else {
-                        $(".artikel-box")
-                            .not("."+value)
-                            .hide("1000")
-                        $(".artikel-box")
-                            .filter("."+value)
-                            .show("1000")
-                    }
-                });
-                // Tambahin Button Active
-                $(".artikel-item").click(function(){
-                    $(this).addClass("active-filter").siblings().removeClass("active-filter");
-                });
-            });
-            </script>
         </section>
 
         <!-- Newsletter Section -->
